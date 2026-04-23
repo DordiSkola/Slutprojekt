@@ -1,0 +1,137 @@
+body.index{
+    
+}
+.index nav{
+    
+}
+.index nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.index nav ul li{
+    list-style: none;
+}
+.index nav ul li a{
+
+}
+
+
+/*Grundläggande matte*/
+body.gmat{
+    
+}
+.gmat nav{
+    
+}
+.gmat nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.gmat nav ul li{
+    list-style: none;
+}
+.gmat nav ul li a{
+
+}
+
+
+/*Algebra*/
+body.alg{
+    
+}
+.alg nav{
+    
+}
+.alg nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.alg nav ul li{
+    list-style: none;
+}
+.alg nav ul li a{
+
+}
+
+
+/*Geometri*/
+body.geo{
+    
+}
+.geo nav{
+    
+}
+.geo nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.geo nav ul li{
+    list-style: none;
+}
+.geo nav ul li a{
+
+}
+
+
+/*S&S*/
+body.sos{
+    
+}
+.sos nav{
+    
+}
+.sos nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.sos nav ul li{
+    list-style: none;
+}
+.sos nav ul li a{
+
+}
+
+
+/*OM SIDAN*/
+body.omsidan{
+    
+}
+.omsidan nav{
+    
+}
+.omsidan nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.omsidan nav ul li{
+    list-style: none;
+}
+.omsidan nav ul li a{
+
+}
+
+
+/*ÖVNINGAR*/
+body.ovn{
+    
+}
+.ovn nav{
+    
+}
+.ovn nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.ovn nav ul li{
+    list-style: none;
+}
+.ovn nav ul li a{
+
+}
