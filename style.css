@@ -1,136 +1,196 @@
 body.index{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+nav{
     
 }
-.index nav{
-    
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
 }
-.index nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-}
-.index nav ul li{
+nav ul li{
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.index nav ul li a{
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.07s ease;
+}
+nav ul li a:hover{
+    transform: scale(1.2);
+}
+.box{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 20px 5px;
+    border-radius: 10px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-variant:normal;
+    text-shadow: gray 2px 2px 7px;
+}
 
-}
+
+
+
+
+
+
+
 
 
 /*Grundläggande matte*/
 body.gmat{
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .gmat nav{
     
 }
 .gmat nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    
 }
 .gmat nav ul li{
-    list-style: none;
+    
 }
 .gmat nav ul li a{
 
 }
 
 
+
+
+
+
+
+
+
+
 /*Algebra*/
 body.alg{
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .alg nav{
     
 }
 .alg nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+   
 }
 .alg nav ul li{
-    list-style: none;
 }
 .alg nav ul li a{
 
 }
 
 
+
+
+
+
+
+
+
 /*Geometri*/
 body.geo{
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .geo nav{
     
 }
 .geo nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    
 }
 .geo nav ul li{
-    list-style: none;
 }
 .geo nav ul li a{
 
 }
 
 
+
+
+
+
+
+
+
+
 /*S&S*/
 body.sos{
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .sos nav{
     
 }
 .sos nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    
 }
 .sos nav ul li{
-    list-style: none;
 }
 .sos nav ul li a{
 
 }
 
 
+
+
+
+
+
+
+
 /*OM SIDAN*/
 body.omsidan{
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .omsidan nav{
     
 }
 .omsidan nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    
 }
 .omsidan nav ul li{
-    list-style: none;
 }
 .omsidan nav ul li a{
 
 }
 
 
+
+
+
+
+
 /*ÖVNINGAR*/
 body.ovn{
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .ovn nav{
     
 }
 .ovn nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    
 }
 .ovn nav ul li{
-    list-style: none;
 }
 .ovn nav ul li a{
 
