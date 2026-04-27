@@ -1,8 +1,4 @@
-body.index{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
+
 nav{
     
 }
@@ -42,6 +38,71 @@ nav ul li a:hover{
 
 
 
+body.index{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.index .funbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+.index .box1{
+    box-shadow: 2px 2px 2px;
+    color: rgb(75,0,130);
+    background-color: rgb(216,191,216);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.index .box2{
+    box-shadow: 2px 2px 2px;
+    color: rgb(139,0,0);
+    background-color:rgb(240,128,128);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.index .box3{
+    box-shadow: 2px 2px 2px;
+    color: rgb(0,100,0);
+    background-color:rgb(143,188,143);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.index .begränsning{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centrera innehållet horisontellt */
+    flex-direction: column;
+    width: 90%; /* flexibel bredd på mindre skärmar */
+    max-width: 900px; /* högsta bredd */
+    margin: 0 auto; /* centrera blocket horisontellt på sidan */
+    box-sizing: border-box; /* inkludera padding i bredden */
+    text-align: center; /* centrera inline/text-innehåll */
+}
+.index .textalign{
+    text-align: start;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.index .stor{
+    font-size: xx-large;
+    font-weight:520;
+}
 
 
 
