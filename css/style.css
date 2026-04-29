@@ -83,6 +83,24 @@ body.index{
     padding: 10px;
     border-radius: 20px;
 }
+.index .boxhistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+.index .footerbox{
+    background-color: black;
+    width: stretch;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
 .index .begränsning{
     display: flex;
     justify-content: center;
@@ -94,10 +112,26 @@ body.index{
     box-sizing: border-box; /* inkludera padding i bredden */
     text-align: center; /* centrera inline/text-innehåll */
 }
+
+/* Enkel återanvändbar avgränsare mellan innehållsdelar */
+.separator{
+    width: 80%; /* hur lång linjen ska vara */
+    max-width: 1600px;
+    height: 0; /* ingen höjd, vi använder border-top */
+    margin: 28px auto; /* vertikalt mellanrum och centrering */
+    border-top: 2px solid rgba(0,0,0,0.2); /* tunn, diskret linje */
+}
+
+/* Mörk variant om du behöver en tydligare linje */
+.separator--dark{
+    border-top-color: rgba(0,0,0,0.35);
+}
 .index .textalign{
     text-align: start;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:50%;
+    text-align: center;
 }
 .index .stor{
     font-size: xx-large;
