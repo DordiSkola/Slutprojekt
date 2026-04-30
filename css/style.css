@@ -1,7 +1,3 @@
-
-nav{
-    
-}
 nav ul{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -104,27 +100,22 @@ body.index{
 .index .begränsning{
     display: flex;
     justify-content: center;
-    align-items: center; /* centrera innehållet horisontellt */
+    align-items: center;
     flex-direction: column;
-    width: 90%; /* flexibel bredd på mindre skärmar */
-    max-width: 900px; /* högsta bredd */
-    margin: 0 auto; /* centrera blocket horisontellt på sidan */
-    box-sizing: border-box; /* inkludera padding i bredden */
-    text-align: center; /* centrera inline/text-innehåll */
+    width: 90%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    text-align: center; 
 }
 
-/* Enkel återanvändbar avgränsare mellan innehållsdelar */
+
 .separator{
-    width: 80%; /* hur lång linjen ska vara */
+    width: 90%; /* hur lång linjen ska vara */
     max-width: 1600px;
     height: 0; /* ingen höjd, vi använder border-top */
-    margin: 28px auto; /* vertikalt mellanrum och centrering */
-    border-top: 2px solid rgba(0,0,0,0.2); /* tunn, diskret linje */
-}
-
-/* Mörk variant om du behöver en tydligare linje */
-.separator--dark{
-    border-top-color: rgba(0,0,0,0.35);
+    margin: 28px auto; 
+    border-top: 2px solid rgba(0,0,0,0.2); 
 }
 .index .textalign{
     text-align: start;
@@ -166,11 +157,67 @@ body.gmat{
 .gmat nav ul li a{
 
 }
+.gmat .box1{
+    box-shadow: 2px 2px 2px;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    width: stretch;
+}
 
-
-
-
-
+.gmat .lila{
+    color: rgb(75,0,130);
+}
+.gmat .green{
+    color: rgb(34, 145, 89);
+}
+.gmat .box2{
+    box-shadow: 2px 2px 2px;
+    color: rgb(34, 145, 89);
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    width: stretch;
+}
+.gmat .box2gr{
+    box-shadow: 2px 2px 2px;
+    color:  rgb(75,0,130);
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    width: stretch;
+}
+.gmat .funbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    width: stretch;
+    font-weight: bold;
+}
+.gmat .begränsning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    text-align: center; 
+}
 
 
 
