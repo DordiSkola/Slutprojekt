@@ -13,17 +13,36 @@
             <li><a href="Övningar.html"><img src="../bilder/hem.png" alt="Hem" style="width: 50px; height: auto; border-radius: 10px;"></a></li>
             <li><a href="index.html">Huvudsida</a></li>
             <li><a href="GrundläggandeMatte.html">Grundläggande matematik</a></li>
-            <li><a href="Algebra.html">Algebra</a></li>
-            <li><a href="Geometri.html">Geometri</a></li>
-            <li><a href="Sannolikhet&Statistik.html">Statistik</a></li>
             <li><a href="OmSidan.html">Om sidan</a></li>
         </ul>
     </nav>
 </div>
 
+<section class="begränsning">
+    <div class="mräkn">
+    <h2>Miniräknare</h2>
+    <div class="calculator-box">
+        <input type="text" id="calcInput" placeholder="Skriv ett matteproblem, t.ex. 2+2*3">
+        <button onclick="calculate()">Beräkna</button>
+        <p id="result"></p>
+    </div>
+    </div>
+
+<div class="quiz-container">
+    <div id="fråga-container">
+        <h3 id="fråga">Fråga</h3>
+        <div id="svar-buttons"></div>
+    </div>
+
+<button id="next-btn" class="btn hide">Next</button>
+<div id="svar" class="hide"></div>
+<button id="restart-btn" class="btn hide">Restart</button>
+</div>
+</section>
 
     <footer>
         <p>©2026 Đorđe. All rights reserved.</p>
     </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

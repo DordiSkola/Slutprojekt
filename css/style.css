@@ -1,6 +1,6 @@
 nav ul{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 nav ul li{
     list-style: none;
@@ -275,128 +275,6 @@ body.gmat{
 
 
 
-/*Algebra*/
-body.alg{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.alg nav{
-    
-}
-.alg nav ul{
-   
-}
-.alg nav ul li{
-}
-.alg nav ul li a{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Geometri*/
-body.geo{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.geo nav{
-    
-}
-.geo nav ul{
-    
-}
-.geo nav ul li{
-}
-.geo nav ul li a{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*S&S*/
-body.sos{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.sos nav{
-    
-}
-.sos nav ul{
-    
-}
-.sos nav ul li{
-}
-.sos nav ul li a{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*OM SIDAN*/
 body.omsidan{
     align-items: center;
@@ -422,34 +300,85 @@ body.omsidan{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*ÖVNINGAR*/
 body.ovn{
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   background-color: rgb(255, 255, 255);
+}
+.ovn .quiz-container{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    max-width: 80%;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.6);
+}
+.ovn #fråga-container{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+.ovn #fråga{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+#svar-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+.ovn .input-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ovn input{
+    width: fit-content;
+}
+.ovn .btn{
+    padding: 1.5rem;
+    background-color: #70b5ff;
+    border: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+input,
+.btn{
+    cursor: pointer;
+}
+.ovn .btn:hover{
+    background-color: #3282d8;
+}
+.ovn .hide{
+    display: none;
+}
+#svar{
+    margin: 2rem auto;
+}
+#fråga,
+#svar{
+    font-size: 1.5rem;
+    font-weight: bold
+}
+.ovn .begränsning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+.ovn .mräkn{
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: center;
-}
-.ovn nav{
-    
-}
-.ovn nav ul{
-    
-}
-.ovn nav ul li{
-}
-.ovn nav ul li a{
-
+    flex-direction: column;
+    padding: 5vh;
 }
