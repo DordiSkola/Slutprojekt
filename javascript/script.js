@@ -139,3 +139,15 @@ function endQuiz(){
     svarDiv.classList.remove("hide");
     svarDiv.innerText = `Din slutliga resultat: ${score} /${shuffledQuestions.length}`
 }
+
+
+
+
+function escapeHtml(text) { //det här är koden som gör att en XSS attack inte är möjlig. Den byter ut alla tecken som kan leda till en XSS attack mot bokstäver som förstör den attacken
+        return String(text)
+            .replace(/&/g, '&amp;') // '&' byts ut till '&amp'
+            .replace(/</g, '&lt;') // osv.
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
