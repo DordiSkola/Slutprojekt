@@ -8,21 +8,21 @@ function calculate() {
   }
 }
 
-const frågaContainer = document.getElementById("fråga-container");
-const frågaElement = document.getElementById("fråga");
-const svarButtons = document.getElementById("svar-buttons");
-const nextButton = document.getElementById("next-btn");
-const restartButton = document.getElementById("restart-btn");
-const svarDiv = document.getElementById("svar");
+const frågaContainer = document.getElementById("fråga-container"); //behållaren för hela frågan
+const frågaElement = document.getElementById("fråga"); //frågan
+const svarButtons = document.getElementById("svar-buttons"); //knappar med svarsalternativ
+const nextButton = document.getElementById("next-btn"); //knapp nästa
+const restartButton = document.getElementById("restart-btn"); //knapp restart
+const svarDiv = document.getElementById("svar"); //div där slutresultatet visas
 
-let shuffledQuestions, currentQuestionIndex, score;
+let shuffledQuestions/*Array*/, currentQuestionIndex/*Mäter vilket tal vi e på*/, score/*Räknar poängen man samlat in*/; 
 
-const frågor = [
+const frågor = [ //Array med 5 frågor
     {
-        fråga: "Vad är 2 + 2?",
-        svar: [
-            {text:"4", correct:true},
-            {text:"22", correct:false},
+        fråga: "Vad är 2 + 2?",//En av frågorna
+        svar: [//Alternativ
+            {text:"4", correct:true},//Korrekta svaret har correct satt som true
+            {text:"22", correct:false},//Fel svar har correct som false
             {text:"8", correct:false},
             {text:"6", correct:false},
         ],
@@ -65,34 +65,34 @@ const frågor = [
     },
 ];
 
-function setNextQuestion(){
-    resetState();
+function setNextQuestion(){//För att rensa gamla svar och visa nya frågan
+    resetState();//Tar bort gamla svarsalternativ från skärmen
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-function showQuestion(fråga){
+function showQuestion(fråga){//Skriver ut frågan på skärmen
     frågaElement.innerText = fråga.fråga;
-    fråga.svar.forEach((answer, index)=>{
-        const inputGroup = document.createElement("div");
+    fråga.svar.forEach((answer, index)=>{ //Lopp genom varje svarsalternativ. Answer lika med ett svarsalternativ och indexnummer
+        const inputGroup = document.createElement("div"); //Skapar en div för varje svar och ger det svaret klassen input-group
         inputGroup.classList.add("input-group");
 
-        const radio = document.createElement("input");
-        radio.type = "radio";
-        radio.id = "svar" + index;
-        radio.name = "svar";
-        radio.value = index;
+        const radio = document.createElement("input");//Skapar radioknappar för att välja det svaret man vill välja
+        radio.type = "radio";//Radioknapp
+        radio.id = "svar" + index;//Ger radioknappen en id av svar och sen indexen för att göra de unika från varann
+        radio.name = "svar";//Ger radioknappen ett namn "svar"
+        radio.value = index;//Get radioknappen värdet av index
 
-        const label = document.createElement("label");
-        label.htmlFor = "svar" + index;
+        const label = document.createElement("label");//Skapar en label
+        label.htmlFor = "svar" + index; //Kopplar label med varsin radioknapp
         label.innerText = answer.text;
 
-        inputGroup.appendChild(radio);
-        inputGroup.appendChild(label);
-        svarButtons.appendChild(inputGroup);
+        inputGroup.appendChild(radio);//Lägger till radioknappen inuti InputGroup
+        inputGroup.appendChild(label);//Lägger till label inuti InputGroup
+        svarButtons.appendChild(inputGroup);//Lägger till InputGroup inuti svarButtons
     })
 }
 
-function resetState(){
+function resetState(){//Tar bort gamla svarsalternativ från skärmen
     while (svarButtons.firstChild){
         svarButtons.removeChild(svarButtons.firstChild);
     }
