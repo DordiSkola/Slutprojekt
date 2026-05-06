@@ -15,7 +15,7 @@ const nextButton = document.getElementById("next-btn"); //knapp nästa
 const restartButton = document.getElementById("restart-btn"); //knapp restart
 const svarDiv = document.getElementById("svar"); //div där slutresultatet visas
 
-let shuffledQuestions/*Array*/, currentQuestionIndex/*Mäter vilket tal vi e på*/, score/*Räknar poängen man samlat in*/; 
+let shuffledQuestions/*Array för frågorna*/, currentQuestionIndex/*Mäter vilken fråga vi e på*/, score/*Räknar poängen man samlat in*/; 
 
 const frågor = [ //Array med 5 frågor
     {
@@ -99,14 +99,14 @@ function resetState(){//Tar bort gamla svarsalternativ från skärmen
 }
 
 function startQuiz(){
-    score = 0;
-    frågaContainer.style.display = "flex";
-    shuffledQuestions = frågor.sort(()=> Math.random() - 0.5);
-    currentQuestionIndex = 0;
-    nextButton.classList.remove("hide");
-    restartButton.classList.add("hide");
-    svarDiv.classList.add("hide");
-    setNextQuestion();
+    score = 0;//Varje gång quizen startas blir score noll
+    frågaContainer.style.display = "flex"; //frågaContainer får display flex
+    shuffledQuestions = frågor.sort(()=> Math.random() - 0.5); //Random start fråga varje gång quizzen startas
+    currentQuestionIndex = 0; //Första frågan får indexen 0
+    nextButton.classList.remove("hide"); //nextButton blir synlig
+    restartButton.classList.add("hide"); //restartButton blir gömd
+    svarDiv.classList.add("hide"); //svarDiv blir gömd
+    setNextQuestion(); //Nya frågan körs
 }
 
 startQuiz();
@@ -145,8 +145,8 @@ function endQuiz(){
 
 function escapeHtml(text) { //det här är koden som gör att en XSS attack inte är möjlig. Den byter ut alla tecken som kan leda till en XSS attack mot bokstäver som förstör den attacken
         return String(text)
-            .replace(/&/g, '&amp;') // '&' byts ut till '&amp'
-            .replace(/</g, '&lt;') // osv.
+            .replace(/&/g, '&amp;') // '&' byts ut till '&amp' osv. för varje rad
+            .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');

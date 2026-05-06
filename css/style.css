@@ -189,6 +189,7 @@ body.gmat{
     width: stretch;
     font-size: large;
     border-color: black;
+    border: 2px solid black;
 }
 
 .gmat .lila{
@@ -210,7 +211,8 @@ body.gmat{
     padding: 10px;
     border-radius: 20px;
     width: stretch;
-    font-size: larger
+    font-size: larger;
+    border: 2px solid rgb(34, 145, 89);
 }
 .gmat .box2li{
     box-shadow: 2px 2px 2px;
@@ -223,6 +225,7 @@ body.gmat{
     border-radius: 20px;
     width: stretch;
     font-size: larger;
+    border: 2px solid rgb(75,0,130);
 }
 .gmat .box2org{
     box-shadow: 2px 2px 2px;
@@ -236,6 +239,7 @@ body.gmat{
     width: stretch;
     font-size: larger;
     border-color: orange;
+    border: 2px solid orange;
 }
 .gmat .funbox{
     display: flex;
