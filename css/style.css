@@ -115,6 +115,7 @@ body.index{
     color: white;
     padding: 5px;
     border-radius: 15px;
+    
 }
 .index .begränsning{
     display: flex;
@@ -163,21 +164,11 @@ body.gmat{
     align-items: center;
     text-align: center;
     justify-content: center;
-}
-.gmat nav{
-    
-}
-.gmat nav ul{
-    
-}
-.gmat nav ul li{
-    
-}
-.gmat nav ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .gmat .box1{
-    box-shadow: 5px 5px 5px;
+    box-shadow: 2px 2px 6px;
     color: black;
     background-color: white;
     border: 10px;
@@ -187,9 +178,9 @@ body.gmat{
     padding: 10px;
     border-radius: 20px;
     width: stretch;
-    font-size: large;
-    border-color: black;
-    border: 2px solid black;
+    border: 1px solid black;
+    margin: 10px;
+    font-weight: 570;
 }
 
 .gmat .lila{
@@ -202,7 +193,7 @@ body.gmat{
     color: orange;
 }
 .gmat .box2gr{
-    box-shadow: 2px 2px 2px;
+    box-shadow: 2px 2px 8px;
     color: rgb(34, 145, 89);
     background-color:white;
     justify-content: center;
@@ -211,11 +202,11 @@ body.gmat{
     padding: 10px;
     border-radius: 20px;
     width: stretch;
-    font-size: larger;
-    border: 2px solid rgb(34, 145, 89);
+    border: 1px solid rgb(34, 145, 89);
+    font-weight: 600;
 }
 .gmat .box2li{
-    box-shadow: 2px 2px 2px;
+    box-shadow: 2px 2px 8px;
     color:  rgb(76, 0, 130);
     background-color:white;
     justify-content: center;
@@ -224,11 +215,11 @@ body.gmat{
     padding: 10px;
     border-radius: 20px;
     width: stretch;
-    font-size: larger;
-    border: 2px solid rgb(75,0,130);
+    border: 1px solid rgb(75,0,130);
+    font-weight: 600;
 }
 .gmat .box2org{
-    box-shadow: 2px 2px 2px;
+    box-shadow: 2px 2px 8px;
     color: orange;
     background-color:white;
     justify-content: center;
@@ -237,9 +228,9 @@ body.gmat{
     padding: 10px;
     border-radius: 20px;
     width: stretch;
-    font-size: larger;
     border-color: orange;
-    border: 2px solid orange;
+    border: 1px solid orange;
+    font-weight: 600;
 }
 .gmat .funbox{
     display: flex;
@@ -269,7 +260,11 @@ body.gmat{
     font-size: large;
     font-weight: 530;
 }
-
+.gmat .grupp{
+    display: flex;
+    flex-direction: row;
+}
+ 
 
 
 
