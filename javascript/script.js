@@ -3,11 +3,22 @@ function calculate() {
     escapeHtml(input);
   try {
     let result = eval(input);
-    document.getElementById("result").innerText = "Svar: " + result;
+    document.getElementById("result").innerText = input + " = " + result;
   } catch {
     document.getElementById("result").innerText = "Ogiltigt uttryck";
   }
 }
+
+
+function escapeHtml(text) { //det här är koden som gör att en XSS attack inte är möjlig. Den byter ut alla tecken som kan leda till en XSS attack mot bokstäver som förstör den attacken
+        return String(text)
+            .replace(/&/g, '&amp;') // '&' byts ut till '&amp' osv. för varje rad
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
 
 const frågaContainer = document.getElementById("fråga-container"); //behållaren för hela frågan
 const frågaElement = document.getElementById("fråga"); //frågan
@@ -140,15 +151,3 @@ function endQuiz(){
     svarDiv.classList.remove("hide");
     svarDiv.innerText = `Din slutliga resultat: ${score} /${shuffledQuestions.length}`
 }
-
-
-
-
-function escapeHtml(text) { //det här är koden som gör att en XSS attack inte är möjlig. Den byter ut alla tecken som kan leda till en XSS attack mot bokstäver som förstör den attacken
-        return String(text)
-            .replace(/&/g, '&amp;') // '&' byts ut till '&amp' osv. för varje rad
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;');
-    }

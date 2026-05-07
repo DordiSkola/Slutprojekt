@@ -1,6 +1,7 @@
 nav ul{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
 }
 nav ul li{
     list-style: none;
@@ -20,13 +21,16 @@ nav ul li a:hover{
 .box{
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 3vh;
     border-radius: 10px;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-variant:normal;
     text-shadow: gray 2px 2px 7px;
+    
+    max-width: 200vh;
+
 }
 
 
@@ -385,4 +389,10 @@ body.mrä{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+}
+
+.geogebra{
+    width: 1000px;
+    width: 100%;
+    height: 100%;
 }
