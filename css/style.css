@@ -367,14 +367,13 @@ input,
     margin: 0;
     padding: 0;
 }
-.ovn .mräkn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 5vh;
-}
+
+
+
+
+
+
+
 body.mrä{
     flex-direction: column;
     align-items: center;
@@ -382,4 +381,8 @@ body.mrä{
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }

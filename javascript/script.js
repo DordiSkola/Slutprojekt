@@ -1,5 +1,6 @@
 function calculate() {
-  let input = document.getElementById("calcInput").value;
+    let input = document.getElementById("calcInput").value;
+    escapeHtml(input);
   try {
     let result = eval(input);
     document.getElementById("result").innerText = "Svar: " + result;
