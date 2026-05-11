@@ -1,7 +1,7 @@
 nav ul{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 nav ul li{
     list-style: none;
@@ -28,9 +28,7 @@ nav ul li a:hover{
     font-weight: bold;
     font-variant:normal;
     text-shadow: gray 2px 2px 7px;
-    
     max-width: 200vh;
-
 }
 
 
@@ -47,6 +45,11 @@ body.index{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+}
+.index nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
 }
 .index .funbox{
     display: flex;
@@ -275,18 +278,48 @@ body.omsidan{
     background-size:cover;
     background-position: center;
 }
-.omsidan nav{
-    
+.omsidan .länk{
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    width: 40rem;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    font-weight: 600;
+    font-size: large;
 }
-.omsidan nav ul{
-    
-}
-.omsidan nav ul li{
-}
-.omsidan nav ul li a{
+.omsidan .boh{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    width:70rem;
+    margin: 1.5rem auto;
+    display: block;
+    max-width: 200vh;
 
 }
+.omsidan .bop a{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-weight: 600;
+    box-shadow: none;
+    text-shadow: none; 
+    margin: 0 auto;
+    max-width: 200vh;
 
+}
 
 
 
@@ -390,9 +423,10 @@ body.mrä{
     background-size:cover;
     background-position: center;
 }
-
-.geogebra{
-    width: 1000px;
-    width: 100%;
-    height: 100%;
+.mrä input{
+    width: 206px;
+}
+.mrä iframe{
+    width: 800px;
+    height: 800px;
 }
