@@ -362,7 +362,7 @@ body.ovn{
     max-width: 80%;
     background-color: #f9f9f9;
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.6);/*rem är en enhet som är beroende av viewport-storleken så den är anpassad för mobiler*/
 }
 .ovn #fråga-container{
     flex-direction: column;
@@ -397,7 +397,7 @@ body.ovn{
 }
 input,
 .btn{
-    cursor: pointer;
+    cursor: pointer;/*Cursor som visar att man kan klicka på elementet*/
 }
 .ovn .btn:hover{
     background-color: #3282d8;
@@ -447,7 +447,7 @@ body.mrä{
 .mrä iframe{
     width: 100%;
   max-width: 900px;  
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9;/*Aspect ratio används för att behålla proportioner*/
   border: 0;
   display: block;
 }
@@ -466,7 +466,7 @@ body.mrä{
 }
 
 
-@media (max-width: 968px) {
+@media (max-width: 968px) {/*När skärmstorleken är mindre än 968px förändras css.en till det som står under*/
 
     .box{
         padding: 1vh;
@@ -483,7 +483,7 @@ body.mrä{
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px) {/*När skärmstorleken är mindre än 650px förändras css.en till det som står under*/
    
     nav ul, .index nav ul{
         display: flex;
@@ -524,7 +524,7 @@ body.mrä{
     
     
 }
-@media (max-width: 710px){
+@media (max-width: 710px){/*När skärmstorleken är mindre än 710px förändras css.en till det som står under*/
      .mrä nav ul, .mrä nav ul{
         display: flex;
         flex-direction: column;
