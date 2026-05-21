@@ -79,11 +79,11 @@ const frågor = [ //Array med 5 frågor
 
 function setNextQuestion(){//För att rensa gamla svar och visa nya frågan
     resetState();//Tar bort gamla svarsalternativ från skärmen
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    showQuestion(shuffledQuestions[currentQuestionIndex]);//Visar slumpmässigt valda frågan
 }
 
 function showQuestion(fråga){//Skriver ut frågan på skärmen
-    frågaElement.innerText = fråga.fråga;
+    frågaElement.innerText = fråga.fråga;//Sätter texten i frågaElement till frågan som skickas in i funktionen
     fråga.svar.forEach((answer, index)=>{ //Lopp genom varje svarsalternativ. Answer lika med ett svarsalternativ och indexnummer
         const inputGroup = document.createElement("div"); //Skapar en div för varje svar och ger det svaret klassen input-group
         inputGroup.classList.add("input-group");
