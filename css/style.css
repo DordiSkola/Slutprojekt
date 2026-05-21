@@ -452,26 +452,26 @@ body.mrä{
   display: block;
 }
 
-/* Ensure the Geogebra wrapper is centered and constrains iframe width */
+
 .mrä .geogebra{
     width: 100%;
     max-width: 900px;
-    margin: 0 auto; /* center the wrapper */
+    margin: 0 auto; 
     box-sizing: border-box;
     padding: 0 1rem;
 }
 .mrä .geogebra iframe{
     display: block;
-    margin: 0 auto; /* center iframe inside wrapper */
+    margin: 0 auto;
 }
 
-/* Responsive navbar: make text smaller and background less intense on narrow screens */
+
 @media (max-width: 968px) {
-    /* slightly smaller padding on the surrounding box */
+
     .box{
         padding: 1vh;
         max-width: 100%;
-        background-color: rgb(0,0,0); /* soften a bit */
+        background-color: rgb(0,0,0); 
     }
     nav ul, .index nav ul{
         grid-template-columns: repeat(4, 1fr);
@@ -484,7 +484,7 @@ body.mrä{
 }
 
 @media (max-width: 650px) {
-    /* stack nav items vertically and reduce visual weight */
+   
     nav ul, .index nav ul{
         display: flex;
         flex-direction: column;
@@ -500,19 +500,19 @@ body.mrä{
         display: block;
         width: 100%;
         box-sizing: border-box;
-        font-size: 0.9rem; /* smaller text */
+        font-size: 0.9rem;
         padding: 0;
-        background-color: rgb(0,0,0); /* less intense background */
+        background-color: rgb(0,0,0); 
         border-radius: 8px;
         text-align: center;
         margin: 0 auto;
     }
     .box{
         padding: 1.2vh;
-        background-color: rgb(0,0,0); /* even softer */
+        background-color: rgb(0,0,0); 
         min-width: 400px;
     }
-    .omsidan .länk{ /* ensure the link container is responsive */
+    .omsidan .länk{
         width: calc(100% - 5rem);
         margin: 1rem auto;
         gap: 1rem;
@@ -540,16 +540,16 @@ body.mrä{
         display: block;
         width: 100%;
         box-sizing: border-box;
-        font-size: 0.9rem; /* smaller text */
+        font-size: 0.9rem;
         padding: 0;
-        background-color: rgb(0,0,0); /* less intense background */
+        background-color: rgb(0,0,0);
         border-radius: 8px;
         text-align: center;
         margin: 0 auto;
     }
     .mrä .box{
         padding: 1.2vh;
-        background-color: rgb(0,0,0); /* even softer */
+        background-color: rgb(0,0,0); 
         min-width: 400px;
     }
     body.mrä{
