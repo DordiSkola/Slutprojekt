@@ -123,31 +123,31 @@ function startQuiz(){
 
 startQuiz();
 
-nextButton.addEventListener("click", () => {
-    const svarIndex = Array.from(
+nextButton.addEventListener("click", () => {//När man trycker på knappen nästa så körs den här funktionen
+    const svarIndex = Array.from(//Gör om NodeList till en array för att kunna använda findIndex
     svarButtons.querySelectorAll("input")
-    ).findIndex((radio) => radio.checked);
-    if(svarIndex !== -1){
-        if(shuffledQuestions[currentQuestionIndex].svar[svarIndex].correct){
+    ).findIndex((radio) => radio.checked);//Hittar indexen för det svarsaltern
+    if(svarIndex !== -1){//Om man har valt ett svar så körs den här koden
+        if(shuffledQuestions[currentQuestionIndex].svar[svarIndex].correct){//Om det svar man valt är korrekt så ökar poängen med 1
             score++;
         }
         currentQuestionIndex++;
-        if(shuffledQuestions.length > currentQuestionIndex) {
+        if(shuffledQuestions.length > currentQuestionIndex) {//Om det finns fler frågor man inte svarade på så körs den här koden
             setNextQuestion();
-        } else{
+        } else{//Om det inte finns fler frågor så körs den här koden
             endQuiz();
         }
     } else {
-        alert("Tryck på en av knapparna för att svara.");
+        alert("Tryck på en av knapparna för att svara.");//Om man inte har valt ett svar och trycker på nästa så kommer det upp en alert
     }
 });
 
-restartButton.addEventListener("click", startQuiz);
+restartButton.addEventListener("click", startQuiz);//När man trycker på knappen restart så startas quizzen om
 
 function endQuiz(){
-    frågaContainer.style.display = "none";
-    nextButton.classList.add("hide");
-    restartButton.classList.remove("hide");
-    svarDiv.classList.remove("hide");
-    svarDiv.innerText = `Din slutliga resultat: ${score} /${shuffledQuestions.length}`
+    frågaContainer.style.display = "none";//FrågaContainer blir gömd
+    nextButton.classList.add("hide");//Gömmer nextButton
+    restartButton.classList.remove("hide");//Visar restartButton
+    svarDiv.classList.remove("hide");//Visar svarDiv
+    svarDiv.innerText = `Din slutliga resultat: ${score} /${shuffledQuestions.length}`//Visar slutgiltigt resultat
 }
