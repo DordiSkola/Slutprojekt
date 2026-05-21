@@ -1,6 +1,6 @@
 function calculate() {
-    let input = document.getElementById("calcInput").value;
-    escapeHtml(input);
+  let input = document.getElementById("calcInput").value;
+  escapeHtml(input);
   try {
     let result = eval(input);
     document.getElementById("result").innerText = input + " = " + result;
@@ -9,16 +9,15 @@ function calculate() {
   }
 }
 
-
-function escapeHtml(text) { //det här är koden som gör att en XSS attack inte är möjlig. Den byter ut alla tecken som kan leda till en XSS attack mot bokstäver som förstör den attacken
-        return String(text)
-            .replace(/&/g, '&amp;') // '&' byts ut till '&amp' osv. för varje rad
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;');
-    }
-
+function escapeHtml(text) {
+  //det här är koden som gör att en XSS attack inte är möjlig. Den byter ut alla tecken som kan leda till en XSS attack mot bokstäver som förstör den attacken
+  return String(text)
+    .replace(/&/g, "&amp;") // '&' byts ut till '&amp' osv. för varje rad
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
 
 const frågaContainer = document.getElementById("fråga-container"); //behållaren för hela frågan
 const frågaElement = document.getElementById("fråga"); //frågan
@@ -27,127 +26,141 @@ const nextButton = document.getElementById("next-btn"); //knapp nästa
 const restartButton = document.getElementById("restart-btn"); //knapp restart
 const svarDiv = document.getElementById("svar"); //div där slutresultatet visas
 
-let shuffledQuestions/*Array för frågorna*/, currentQuestionIndex/*Mäter vilken fråga vi e på*/, score/*Räknar poängen man samlat in*/; 
+let shuffledQuestions /*Array för frågorna*/,
+  currentQuestionIndex /*Mäter vilken fråga vi e på*/,
+  score /*Räknar poängen man samlat in*/;
 
-const frågor = [ //Array med 5 frågor
-    {
-        fråga: "Vad är 2 + 2?",//En av frågorna
-        svar: [//Alternativ
-            {text:"4", correct:true},//Korrekta svaret har correct satt som true
-            {text:"22", correct:false},//Fel svar har correct som false
-            {text:"8", correct:false},
-            {text:"6", correct:false},
-        ],
-    },
-    {
-        fråga: "Vad är 6/10?",
-        svar: [
-            {text:"0.24", correct:false},
-            {text:"0.6", correct:true},
-            {text:"6", correct:false},
-            {text:"2.4", correct:false},
-        ],
-    },
-    {
-        fråga: "Vad är 444-243?",
-        svar: [
-            {text:"211", correct:false},
-            {text:"234", correct:false},
-            {text:"202", correct:false},
-            {text:"201", correct:true},
-        ],
-    },
-    {
-        fråga: "Vad är 2211+678?",
-        svar: [
-            {text:"2288", correct:false},
-            {text:"2299", correct:false},
-            {text:"2889", correct:true},
-            {text:"2789", correct:false},
-        ],
-    },
-    {
-        fråga: "Vad är 45x5?",
-        svar: [
-            {text:"560", correct:false},
-            {text:"134", correct:false},
-            {text:"225", correct:true},
-            {text:"122", correct:false},
-        ],
-    },
+const frågor = [
+  //Array med 5 frågor
+  {
+    fråga: "Vad är 2 + 2?", //En av frågorna
+    svar: [
+      //Alternativ
+      { text: "4", correct: true }, //Korrekta svaret har correct satt som true
+      { text: "22", correct: false }, //Fel svar har correct som false
+      { text: "8", correct: false },
+      { text: "6", correct: false },
+    ],
+  },
+  {
+    fråga: "Vad är 6/10?",
+    svar: [
+      { text: "0.24", correct: false },
+      { text: "0.6", correct: true },
+      { text: "6", correct: false },
+      { text: "2.4", correct: false },
+    ],
+  },
+  {
+    fråga: "Vad är 444-243?",
+    svar: [
+      { text: "211", correct: false },
+      { text: "234", correct: false },
+      { text: "202", correct: false },
+      { text: "201", correct: true },
+    ],
+  },
+  {
+    fråga: "Vad är 2211+678?",
+    svar: [
+      { text: "2288", correct: false },
+      { text: "2299", correct: false },
+      { text: "2889", correct: true },
+      { text: "2789", correct: false },
+    ],
+  },
+  {
+    fråga: "Vad är 45x5?",
+    svar: [
+      { text: "560", correct: false },
+      { text: "134", correct: false },
+      { text: "225", correct: true },
+      { text: "122", correct: false },
+    ],
+  },
 ];
 
-function setNextQuestion(){//För att rensa gamla svar och visa nya frågan
-    resetState();//Tar bort gamla svarsalternativ från skärmen
-    showQuestion(shuffledQuestions[currentQuestionIndex]);//Visar slumpmässigt valda frågan
+function setNextQuestion() {
+  //För att rensa gamla svar och visa nya frågan
+  resetState(); //Tar bort gamla svarsalternativ från skärmen
+  showQuestion(shuffledQuestions[currentQuestionIndex]); //Visar slumpmässigt valda frågan
 }
 
-function showQuestion(fråga){//Skriver ut frågan på skärmen
-    frågaElement.innerText = fråga.fråga;//Sätter texten i frågaElement till frågan som skickas in i funktionen
-    fråga.svar.forEach((answer, index)=>{ //Lopp genom varje svarsalternativ. Answer lika med ett svarsalternativ och indexnummer
-        const inputGroup = document.createElement("div"); //Skapar en div för varje svar och ger det svaret klassen input-group
-        inputGroup.classList.add("input-group");
+function showQuestion(fråga) {
+  //Skriver ut frågan på skärmen
+  frågaElement.innerText = fråga.fråga; //Sätter texten i frågaElement till frågan som skickas in i funktionen
+  fråga.svar.forEach((answer, index) => {
+    //Lopp genom varje svarsalternativ. Answer lika med ett svarsalternativ och indexnummer
+    const inputGroup = document.createElement("div"); //Skapar en div för varje svar och ger det svaret klassen input-group
+    inputGroup.classList.add("input-group");
 
-        const radio = document.createElement("input");//Skapar radioknappar för att välja det svaret man vill välja
-        radio.type = "radio";//Radioknapp
-        radio.id = "svar" + index;//Ger radioknappen en id av svar och sen indexen för att göra de unika från varann
-        radio.name = "svar";//Ger radioknappen ett namn "svar"
-        radio.value = index;//Get radioknappen värdet av index
+    const radio = document.createElement("input"); //Skapar radioknappar för att välja det svaret man vill välja
+    radio.type = "radio"; //Radioknapp
+    radio.id = "svar" + index; //Ger radioknappen en id av svar och sen indexen för att göra de unika från varann
+    radio.name = "svar"; //Ger radioknappen ett namn "svar"
+    radio.value = index; //Get radioknappen värdet av index
 
-        const label = document.createElement("label");//Skapar en label
-        label.htmlFor = "svar" + index; //Kopplar label med varsin radioknapp
-        label.innerText = answer.text;
+    const label = document.createElement("label"); //Skapar en label
+    label.htmlFor = "svar" + index; //Kopplar label med varsin radioknapp
+    label.innerText = answer.text;
 
-        inputGroup.appendChild(radio);//Lägger till radioknappen inuti InputGroup
-        inputGroup.appendChild(label);//Lägger till label inuti InputGroup
-        svarButtons.appendChild(inputGroup);//Lägger till InputGroup inuti svarButtons
-    })
+    inputGroup.appendChild(radio); //Lägger till radioknappen inuti InputGroup
+    inputGroup.appendChild(label); //Lägger till label inuti InputGroup
+    svarButtons.appendChild(inputGroup); //Lägger till InputGroup inuti svarButtons
+  });
 }
 
-function resetState(){//Tar bort gamla svarsalternativ från skärmen
-    while (svarButtons.firstChild){
-        svarButtons.removeChild(svarButtons.firstChild);
-    }
+function resetState() {
+  //Tar bort gamla svarsalternativ från skärmen
+  while (svarButtons.firstChild) {
+    svarButtons.removeChild(svarButtons.firstChild);
+  }
 }
 
-function startQuiz(){
-    score = 0;//Varje gång quizen startas blir score noll
-    frågaContainer.style.display = "flex"; //frågaContainer får display flex
-    shuffledQuestions = frågor.sort(()=> Math.random() - 0.5); //Random start fråga varje gång quizzen startas
-    currentQuestionIndex = 0; //Första frågan får indexen 0
-    nextButton.classList.remove("hide"); //nextButton blir synlig
-    restartButton.classList.add("hide"); //restartButton blir gömd
-    svarDiv.classList.add("hide"); //svarDiv blir gömd
-    setNextQuestion(); //Nya frågan körs
+function startQuiz() {
+  score = 0; //Varje gång quizen startas blir score noll
+  frågaContainer.style.display = "flex"; //frågaContainer får display flex
+  shuffledQuestions = frågor.sort(() => Math.random() - 0.5); //Random start fråga varje gång quizzen startas
+  currentQuestionIndex = 0; //Första frågan får indexen 0
+  nextButton.classList.remove("hide"); //nextButton blir synlig
+  restartButton.classList.add("hide"); //restartButton blir gömd
+  svarDiv.classList.add("hide"); //svarDiv blir gömd
+  setNextQuestion(); //Nya frågan körs
 }
 
 startQuiz();
 
-nextButton.addEventListener("click", () => {//När man trycker på knappen nästa så körs den här funktionen
-    const svarIndex = Array.from(//Gör om NodeList till en array för att kunna använda findIndex
-    svarButtons.querySelectorAll("input")
-    ).findIndex((radio) => radio.checked);//Hittar indexen för det svarsaltern
-    if(svarIndex !== -1){//Om man har valt ett svar så körs den här koden
-        if(shuffledQuestions[currentQuestionIndex].svar[svarIndex].correct){//Om det svar man valt är korrekt så ökar poängen med 1
-            score++;
-        }
-        currentQuestionIndex++;
-        if(shuffledQuestions.length > currentQuestionIndex) {//Om det finns fler frågor man inte svarade på så körs den här koden
-            setNextQuestion();
-        } else{//Om det inte finns fler frågor så körs den här koden
-            endQuiz();
-        }
-    } else {
-        alert("Tryck på en av knapparna för att svara.");//Om man inte har valt ett svar och trycker på nästa så kommer det upp en alert
+nextButton.addEventListener("click", () => {
+  //När man trycker på knappen nästa så körs den här funktionen
+  const svarIndex = Array.from(
+    //Gör om NodeList till en array för att kunna använda findIndex
+    svarButtons.querySelectorAll("input"),
+  ).findIndex((radio) => radio.checked); //Hittar indexen för det svarsaltern
+  if (svarIndex !== -1) {
+    //Om man har valt ett svar så körs den här koden
+    if (shuffledQuestions[currentQuestionIndex].svar[svarIndex].correct) {
+      //Om det svar man valt är korrekt så ökar poängen med 1
+      score++;
     }
+    currentQuestionIndex++;
+    if (shuffledQuestions.length > currentQuestionIndex) {
+      //Om det finns fler frågor man inte svarade på så körs den här koden
+      setNextQuestion();
+    } else {
+      //Om det inte finns fler frågor så körs den här koden
+      endQuiz();
+    }
+  } else {
+    alert("Tryck på en av knapparna för att svara."); //Om man inte har valt ett svar och trycker på nästa så kommer det upp en alert
+  }
 });
 
-restartButton.addEventListener("click", startQuiz);//När man trycker på knappen restart så startas quizzen om
+restartButton.addEventListener("click", startQuiz); //När man trycker på knappen restart så startas quizzen om
 
-function endQuiz(){
-    frågaContainer.style.display = "none";//FrågaContainer blir gömd
-    nextButton.classList.add("hide");//Gömmer nextButton
-    restartButton.classList.remove("hide");//Visar restartButton
-    svarDiv.classList.remove("hide");//Visar svarDiv
-    svarDiv.innerText = `Din slutliga resultat: ${score} /${shuffledQuestions.length}`//Visar slutgiltigt resultat
+function endQuiz() {
+  frågaContainer.style.display = "none"; //FrågaContainer blir gömd
+  nextButton.classList.add("hide"); //Gömmer nextButton
+  restartButton.classList.remove("hide"); //Visar restartButton
+  svarDiv.classList.remove("hide"); //Visar svarDiv
+  svarDiv.innerText = `Din slutliga resultat: ${score} /${shuffledQuestions.length}`; //Visar slutgiltigt resultat
 }

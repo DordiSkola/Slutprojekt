@@ -1,51 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../bilder/hem.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../bilder/hem.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Miniräknare</title>
-</head>
-<body class="mrä">
+  </head>
+  <body class="mrä">
     <div class="box">
-    <nav>
+      <nav>
         <ul>
-            <li><a href="index.html"><img src="../bilder/hem.png" alt="Hem" style="width: 50px; height: auto; border-radius: 10px;"></a></li>
-            <li><a href="GrundläggandeMatte.html">Grundläggande matematik</a></li>
-            <li><a href="OmSidan.html">Om sidan</a></li>
-            <li><a href="Övningar.html">Övningar</a></li>
+          <li>
+            <a href="index.html"
+              ><img
+                src="../bilder/hem.png"
+                alt="Hem"
+                style="width: 50px; height: auto; border-radius: 10px"
+            /></a>
+          </li>
+          <li><a href="GrundläggandeMatte.html">Grundläggande matematik</a></li>
+          <li><a href="OmSidan.html">Om sidan</a></li>
+          <li><a href="Övningar.html">Övningar</a></li>
         </ul>
-    </nav>
-</div>
-<section class="begränsning">
-    <div class="mräkn">
-        <br>
-    <h1>Miniräknare</h1>
-    <div class="calculator-box"><!--Miniräknare-->
-        <input type="text" id="calcInput" placeholder="Skriv ett matteproblem, t.ex. 2+2*3">
-        <button onclick="calculate()">Beräkna</button><!--När man klickar på knappen körs metoden calculate()-->
-        <p id="result"></p>
+      </nav>
     </div>
-    </div>
-    <div class="geogebra">
-        <br><br><br>
+    <section class="begränsning">
+      <div class="mräkn">
+        <br />
+        <h1>Miniräknare</h1>
+        <div class="calculator-box">
+          <!--Miniräknare-->
+          <input
+            type="text"
+            id="calcInput"
+            placeholder="Skriv ett matteproblem, t.ex. 2+2*3"
+          />
+          <button onclick="calculate()">Beräkna</button
+          ><!--När man klickar på knappen körs metoden calculate()-->
+          <p id="result"></p>
+        </div>
+      </div>
+      <div class="geogebra">
+        <br /><br /><br />
 
         <h1>Geogebra</h1>
-    <iframe src="https://www.geogebra.org/graphing"></iframe><!--iframe för Geogebra-->
-   </div>
-   <br><br>
-</section>
+        <iframe src="https://www.geogebra.org/graphing"></iframe
+        ><!--iframe för Geogebra-->
+      </div>
+      <br /><br />
+    </section>
 
-<footer class="footerbox">
-    <p>©2026 Đorđe. All rights reserved.</p>
-    <p><a href="https://jigsaw.w3.org/css-validator/check/referer"><!--Valid CSS-->
-        <img style="border:0;width:88px;height:31px"
+    <footer class="footerbox">
+      <p>©2026 Đorđe. All rights reserved.</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"
+          ><!--Valid CSS-->
+          <img
+            style="border: 0; width: 88px; height: 31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Valid CSS!" />
-    </a></p>
-</footer>
+            alt="Valid CSS!"
+          />
+        </a>
+      </p>
+    </footer>
 
-<script src="../javascript/script.js"></script>
-</body>
+    <script src="../javascript/script.js"></script>
+  </body>
 </html>

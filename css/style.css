@@ -1,560 +1,528 @@
-nav ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto;/*Griden anpassas automatiskt lodrätt*/
-    grid-template-rows: auto auto auto auto;/*Griden anpassas automatiskt vågrätt*/
+nav ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto; /*Griden anpassas automatiskt lodrätt*/
+  grid-template-rows: auto auto auto auto; /*Griden anpassas automatiskt vågrätt*/
 }
-nav ul li{
-    list-style: none;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.07s ease;/*När man hovrar över länken transitioneras den*/
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.07s ease; /*När man hovrar över länken transitioneras den*/
 }
-nav ul li a:hover{
-    transform: scale(1.2);/*Skalan den ska transitionera till*/
+nav ul li a:hover {
+  transform: scale(1.2); /*Skalan den ska transitionera till*/
 }
-.box{
-    background-color: black;
-    color: white;
-    padding: 3vh;/*vh används för att ange höjden i viewport-höjder*/
-    border-radius: 10px;
-    font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-variant:normal;
-    text-shadow: gray 2px 2px 7px;
-    max-width: 200vh;
-}
-
-
-
-
-
-body.index{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-}
-.index nav ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-}
-.index .funbox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-}
-.index .box1{
-    box-shadow: 2px 2px 2px;
-    color: rgb(75,0,130);
-    background-color: rgb(216,191,216);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-}
-.index .box2{
-    box-shadow: 2px 2px 2px;
-    color: rgb(139,0,0);
-    background-color:rgb(240,128,128);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-}
-.index .box3{
-    box-shadow: 2px 2px 2px;
-    color: rgb(0,100,0);
-    background-color:rgb(143,188,143);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-}
-.index .boxhistoria{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-}
-.footerbox{
-    background-color: black;
-    width: stretch;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 5px;
-    border-radius: 15px;
-    
-}
-.index .begränsning{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%; 
-    max-width: 900px; 
-    margin: 0 auto; 
-    box-sizing: border-box; 
-    text-align: center; 
+.box {
+  background-color: black;
+  color: white;
+  padding: 3vh; /*vh används för att ange höjden i viewport-höjder*/
+  border-radius: 10px;
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-variant: normal;
+  text-shadow: gray 2px 2px 7px;
+  max-width: 200vh;
 }
 
-
-.separator{/*Snygg linje som separator*/
-    width: 90%;
-    max-width: 1600px;
-    height: 0;
-    margin: 28px auto; 
-    border-top: 2px solid rgba(0,0,0,0.2); 
+body.index {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.index .textalign{
-    text-align: start;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width:50%;
-    text-align: center;
+.index nav ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
 }
-.index .stor{
-    font-size: xx-large;
-    font-weight:520;
+.index .funbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.index .box1 {
+  box-shadow: 2px 2px 2px;
+  color: rgb(75, 0, 130);
+  background-color: rgb(216, 191, 216);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.index .box2 {
+  box-shadow: 2px 2px 2px;
+  color: rgb(139, 0, 0);
+  background-color: rgb(240, 128, 128);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.index .box3 {
+  box-shadow: 2px 2px 2px;
+  color: rgb(0, 100, 0);
+  background-color: rgb(143, 188, 143);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.index .boxhistoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.footerbox {
+  background-color: black;
+  width: stretch;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+}
+.index .begränsning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
+.separator {
+  /*Snygg linje som separator*/
+  width: 90%;
+  max-width: 1600px;
+  height: 0;
+  margin: 28px auto;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+.index .textalign {
+  text-align: start;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 50%;
+  text-align: center;
+}
+.index .stor {
+  font-size: xx-large;
+  font-weight: 520;
+}
 
 /*Grundläggande matte*/
-body.gmat{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+body.gmat {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.gmat .box1{
-    box-shadow: 2px 2px 6px;
-    color: black;
-    background-color: white;
-    border: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    width: stretch;
-    border: 1px solid black;
-    margin: 10px;
-    font-weight: 570;
-}
-
-.gmat .lila{
-    color: rgb(75,0,130);
-}
-.gmat .green{
-    color: rgb(34, 145, 89);
-}
-.gmat .orange{
-    color: orange;
-}
-.gmat .box2gr{
-    box-shadow: 2px 2px 8px;
-    color: rgb(34, 145, 89);
-    background-color:white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    width: stretch;
-    border: 1px solid rgb(34, 145, 89);
-    font-weight: 600;
-}
-.gmat .box2li{
-    box-shadow: 2px 2px 8px;
-    color:  rgb(76, 0, 130);
-    background-color:white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    width: stretch;
-    border: 1px solid rgb(75,0,130);
-    font-weight: 600;
-}
-.gmat .box2org{
-    box-shadow: 2px 2px 8px;
-    color: orange;
-    background-color:white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    width: stretch;
-    border-color: orange;
-    border: 1px solid orange;
-    font-weight: 600;
-}
-.gmat .funbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-    width: stretch;
-    font-weight: bold;
-}
-.gmat .begränsning{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%; 
-    max-width: 1400px; 
-    margin: 0 auto; 
-    box-sizing: border-box; 
-    text-align: center; 
-}
-.gmat h2{
-    font-size: large;
-}
-.gmat .tjockare{
-    font-size: large;
-    font-weight: 530;
-}
-.gmat .grupp{
-    display: flex;
-    flex-direction: row;
-}
-.gmat .opacitybox{
-    box-shadow: 2px 2px 6px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    width: stretch;
-    margin: 10px;
-    font-weight: 570;
+.gmat .box1 {
+  box-shadow: 2px 2px 6px;
+  color: black;
+  background-color: white;
+  border: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: stretch;
+  border: 1px solid black;
+  margin: 10px;
+  font-weight: 570;
 }
 
-
-
-
-
-
-
-
+.gmat .lila {
+  color: rgb(75, 0, 130);
+}
+.gmat .green {
+  color: rgb(34, 145, 89);
+}
+.gmat .orange {
+  color: orange;
+}
+.gmat .box2gr {
+  box-shadow: 2px 2px 8px;
+  color: rgb(34, 145, 89);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: stretch;
+  border: 1px solid rgb(34, 145, 89);
+  font-weight: 600;
+}
+.gmat .box2li {
+  box-shadow: 2px 2px 8px;
+  color: rgb(76, 0, 130);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: stretch;
+  border: 1px solid rgb(75, 0, 130);
+  font-weight: 600;
+}
+.gmat .box2org {
+  box-shadow: 2px 2px 8px;
+  color: orange;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: stretch;
+  border-color: orange;
+  border: 1px solid orange;
+  font-weight: 600;
+}
+.gmat .funbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  width: stretch;
+  font-weight: bold;
+}
+.gmat .begränsning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+.gmat h2 {
+  font-size: large;
+}
+.gmat .tjockare {
+  font-size: large;
+  font-weight: 530;
+}
+.gmat .grupp {
+  display: flex;
+  flex-direction: row;
+}
+.gmat .opacitybox {
+  box-shadow: 2px 2px 6px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: stretch;
+  margin: 10px;
+  font-weight: 570;
+}
 
 /*OM SIDAN*/
-body.omsidan{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+body.omsidan {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.omsidan .länk{
-    display: flex;
-    flex-direction: row;
-    gap: 5vh;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: white;
-    width: 40rem;
-    border-radius: 10px;
-    margin: 1.5rem auto;
-    font-weight: 600;
-    font-size: large;
+.omsidan .länk {
+  display: flex;
+  flex-direction: row;
+  gap: 5vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  width: 40rem;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  font-weight: 600;
+  font-size: large;
 }
-.omsidan .boh{
-   box-shadow: 2px 2px 6px;
-    color: black;
-    background-color: white;
-    border: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    width: stretch;
-    border: 1px solid black;
-    margin: 100px;
-    font-weight: 570;
-    
+.omsidan .boh {
+  box-shadow: 2px 2px 6px;
+  color: black;
+  background-color: white;
+  border: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: stretch;
+  border: 1px solid black;
+  margin: 100px;
+  font-weight: 570;
 }
-.omsidan .bop a{
-    display: inline-block;
-    background-color: white;
-    color: black;
-    text-decoration: none; 
-    padding: 0.5rem 1rem; 
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,0.15);
-    font-weight: 600;
-    box-shadow: none;
-    text-shadow: none; 
-    margin: 0 auto;
-    max-width: 200vh;
+.omsidan .bop a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  box-shadow: none;
+  text-shadow: none;
+  margin: 0 auto;
+  max-width: 200vh;
 }
-.omsidan .img{
-    height: 20vh;
-    width: 30vh;
+.omsidan .img {
+  height: 20vh;
+  width: 30vh;
 }
-
-
-
-
-
 
 /*ÖVNINGAR*/
-body.ovn{
-   justify-content: center;
-   align-items: center;
-   padding: 0;
-   background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+body.ovn {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.ovn .quiz-container{
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    max-width: 80%;
-    background-color: #f9f9f9;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.6);/*rem är en enhet som är beroende av viewport-storleken så den är anpassad för mobiler*/
+.ovn .quiz-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  max-width: 80%;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.6); /*rem är en enhet som är beroende av viewport-storleken så den är anpassad för mobiler*/
 }
-.ovn #fråga-container{
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+.ovn #fråga-container {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
-.ovn #fråga{
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 1rem;
+.ovn #fråga {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
-#svar-buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-    margin-bottom: 1rem;
+#svar-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
 }
-.ovn .input-group{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.ovn .input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.ovn input{
-    width: fit-content;
+.ovn input {
+  width: fit-content;
 }
-.ovn .btn{
-    padding: 1.5rem;
-    background-color: #70b5ff;
-    border: none;
-    border-radius: 0 0 0.5rem 0.5rem;
+.ovn .btn {
+  padding: 1.5rem;
+  background-color: #70b5ff;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 input,
-.btn{
-    cursor: pointer;/*Cursor som visar att man kan klicka på elementet*/
+.btn {
+  cursor: pointer; /*Cursor som visar att man kan klicka på elementet*/
 }
-.ovn .btn:hover{
-    background-color: #3282d8;
+.ovn .btn:hover {
+  background-color: #3282d8;
 }
-.ovn .hide{
-    display: none;
+.ovn .hide {
+  display: none;
 }
-#svar{
-    margin: 2rem auto;
+#svar {
+  margin: 2rem auto;
 }
 #fråga,
-#svar{
-    font-size: 1.5rem;
-    font-weight: bold
+#svar {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-.ovn .begränsning{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin: 0;
-    padding: 0;
+.ovn .begränsning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-
-
-
-
-body.mrä{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+body.mrä {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  background-image: url(../bilder/david-jorre-9f1gCaLkZBU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.mrä input{
-    width: 206px;
+.mrä input {
+  width: 206px;
 }
-.mrä iframe{
+.mrä iframe {
   width: 100%;
-  max-width: 900px;  
-  aspect-ratio: 16 / 9;/*Aspect ratio används för att behålla proportioner*/
+  max-width: 900px;
+  aspect-ratio: 16 / 9; /*Aspect ratio används för att behålla proportioner*/
   border: 0;
   display: block;
 }
 
-
-.mrä .geogebra{
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto; 
-    box-sizing: border-box;
-    padding: 0 1rem;
+.mrä .geogebra {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
 }
-.mrä .geogebra iframe{
-    display: block;
+.mrä .geogebra iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 968px) {
+  /*När skärmstorleken är mindre än 968px förändras css.en till det som står under*/
+
+  .box {
+    padding: 1vh;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  nav ul,
+  .index nav ul {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.1rem;
+  }
+  nav ul li a,
+  .index nav ul li a {
+    font-size: 0.8rem;
+    padding: 0.1rem 0.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  /*När skärmstorleken är mindre än 650px förändras css.en till det som står under*/
+
+  nav ul,
+  .index nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.5rem 0;
     margin: 0 auto;
+  }
+  nav ul li {
+    width: 100%;
+    padding: 0;
+  }
+  nav ul li a,
+  .index nav ul li a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .box {
+    padding: 1.2vh;
+    background-color: rgb(0, 0, 0);
+    min-width: 400px;
+  }
+  .omsidan .länk {
+    width: calc(100% - 5rem);
+    margin: 1rem auto;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  body {
+    min-width: 400px;
+  }
 }
-
-
-@media (max-width: 968px) {/*När skärmstorleken är mindre än 968px förändras css.en till det som står under*/
-
-    .box{
-        padding: 1vh;
-        max-width: 100%;
-        background-color: rgb(0,0,0); 
-    }
-    nav ul, .index nav ul{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0.1rem;
-    }
-    nav ul li a, .index nav ul li a{
-        font-size: 0.8rem;
-        padding: 0.1rem 0.1rem;
-    }
-}
-
-@media (max-width: 650px) {/*När skärmstorleken är mindre än 650px förändras css.en till det som står under*/
-   
-    nav ul, .index nav ul{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 0.5rem 0;
-        margin: 0 auto;
-    }
-    nav ul li{
-        width: 100%;
-        padding: 0;
-    }
-    nav ul li a, .index nav ul li a{
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 0.9rem;
-        padding: 0;
-        background-color: rgb(0,0,0); 
-        border-radius: 8px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .box{
-        padding: 1.2vh;
-        background-color: rgb(0,0,0); 
-        min-width: 400px;
-    }
-    .omsidan .länk{
-        width: calc(100% - 5rem);
-        margin: 1rem auto;
-        gap: 1rem;
-        padding: 0.5rem;
-    }
-    body{
-        min-width: 400px;
-    }
-    
-    
-}
-@media (max-width: 710px){/*När skärmstorleken är mindre än 710px förändras css.en till det som står under*/
-     .mrä nav ul, .mrä nav ul{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 0.5rem 0;
-        margin: 0 auto;
-    }
-    .mrä nav ul li{
-        width: 100%;
-        padding: 0;
-    }
-    .mrä nav ul li a, .mrä nav ul li a{
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 0.9rem;
-        padding: 0;
-        background-color: rgb(0,0,0);
-        border-radius: 8px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .mrä .box{
-        padding: 1.2vh;
-        background-color: rgb(0,0,0); 
-        min-width: 400px;
-    }
-    body.mrä{
-        min-width: 400px;
-    }
-    
-    
+@media (max-width: 710px) {
+  /*När skärmstorleken är mindre än 710px förändras css.en till det som står under*/
+  .mrä nav ul,
+  .mrä nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+  }
+  .mrä nav ul li {
+    width: 100%;
+    padding: 0;
+  }
+  .mrä nav ul li a,
+  .mrä nav ul li a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .mrä .box {
+    padding: 1.2vh;
+    background-color: rgb(0, 0, 0);
+    min-width: 400px;
+  }
+  body.mrä {
+    min-width: 400px;
+  }
 }

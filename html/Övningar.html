@@ -1,45 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../bilder/hem.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../bilder/hem.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
-</head>
-<body class="ovn">
+  </head>
+  <body class="ovn">
     <div class="box">
-    <nav>
+      <nav>
         <ul>
-            <li><a href="index.html"><img src="../bilder/hem.png" alt="Hem" style="width: 50px; height: auto; border-radius: 10px;"></a></li>
-            <li><a href="GrundläggandeMatte.html">Grundläggande matematik</a></li>
-            <li><a href="OmSidan.html">Om sidan</a></li>
-            <li><a href="Miniräknare.html">Miniräknare</a></li>
+          <li>
+            <a href="index.html"
+              ><img
+                src="../bilder/hem.png"
+                alt="Hem"
+                style="width: 50px; height: auto; border-radius: 10px"
+            /></a>
+          </li>
+          <li><a href="GrundläggandeMatte.html">Grundläggande matematik</a></li>
+          <li><a href="OmSidan.html">Om sidan</a></li>
+          <li><a href="Miniräknare.html">Miniräknare</a></li>
         </ul>
-    </nav>
-</div>
-
-<section class="begränsning">
-<div class="quiz-container"><!--div för quiz och påverkas av javascript-->
-    <div id="fråga-container">
-        <h1 id="fråga">Fråga</h1>
-        <div id="svar-buttons"></div>
+      </nav>
     </div>
 
-<button id="next-btn" class="btn hide">Next</button><!--button next är gömd för just nu-->
-<div id="svar" class="hide"></div><!--Svaren är gömd-->
-<button id="restart-btn" class="btn hide">Restart</button><!--Restart button är gömd också-->
-</div>
-</section>
+    <section class="begränsning">
+      <div class="quiz-container">
+        <!--div för quiz och påverkas av javascript-->
+        <div id="fråga-container">
+          <h1 id="fråga">Fråga</h1>
+          <div id="svar-buttons"></div>
+        </div>
+
+        <button id="next-btn" class="btn hide">Next</button
+        ><!--button next är gömd för just nu-->
+        <div id="svar" class="hide"></div>
+        <!--Svaren är gömd-->
+        <button id="restart-btn" class="btn hide">Restart</button
+        ><!--Restart button är gömd också-->
+      </div>
+    </section>
 
     <footer class="footerbox">
-        <p>©2026 Đorđe. All rights reserved.</p>
-        <p><a href="https://jigsaw.w3.org/css-validator/check/referer"><!--Valid CSS-->
-        <img style="border:0;width:88px;height:31px"
+      <p>©2026 Đorđe. All rights reserved.</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"
+          ><!--Valid CSS-->
+          <img
+            style="border: 0; width: 88px; height: 31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Valid CSS!" />
-    </a></p>
+            alt="Valid CSS!"
+          />
+        </a>
+      </p>
     </footer>
     <script src="../javascript/script.js"></script>
-</body>
+  </body>
 </html>
