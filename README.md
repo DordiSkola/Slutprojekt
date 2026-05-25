@@ -19,8 +19,8 @@ I "Omsidan" sida har jag information om vem som gjorde sidan alltså mig, varfö
 
 ## Övningar
 
-I "Övningar" sidan har jag en quiz med 5 frågor som blir slumpmässigt valda och efter quizen ser man resultaten. Om man inte väljer ett svar kan man inte gå vidare och när man har valt ett svar kan man trycka på next. På slutet av quizen kan man börja om quizen.
+I "Övningar" sidan har jag en quiz med 5 frågor som blir slumpmässigt valda och efter quizen ser man resultaten. Om man inte väljer ett svar kan man inte gå vidare och när man har valt ett svar kan man trycka på next. På slutet av quizen kan man börja om quizen och då resettas koden.
 
 ## Miniräknare
 
-I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare visualisering av grafer. Miniräknaren räknar ut så som miniräknaren gör och geogebra
+I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare visualisering av grafer. Miniräknaren räknar ut det man skriver in så som en vanlig miniräknare gör. Geogebra är tagen från geogebrasa sidan.
