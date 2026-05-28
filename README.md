@@ -37,40 +37,40 @@ I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare 
 
 ### Dator
 
-![Dator](<bilder/Skärmbild 2026-05-28 093107.png>)
+![Dator](<bilder/Chrome - Dator.png>)
 
 ### Mobil
 
-![Mobil](<bilder/Skärmbild 2026-05-28 093144.png>)
+![Mobil](<bilder/Chrome - Mobil.png>)
 <br><br><br>
 
 ## Microsoft Edge
 
 ### Dator
 
-![Dator](<bilder/Skärmbild 2026-05-28 092511.png>)
+![Dator](<bilder/Edge - Dator.png>)
 
 ### Mobil
 
-![Mobil](<bilder/Skärmbild 2026-05-28 092447.png>)
+![Mobil](<bilder/Edge - Mobil.png>)
 <br><br><br>
 
 ## Brave
 
 ### Dator
 
-![Dator](<bilder/Skärmbild 2026-05-28 093255.png>)
+![Dator](<bilder/Brave - Dator.png>)
 
 ### Mobil
 
-![Mobil](<bilder/Skärmbild 2026-05-28 093306.png>)
+![Mobil](<bilder/Brave - Mobil.png>)
 
 <br><br><br>
 
 # Alla sidor:
 
-![alt text](<bilder/Skärmbild 2026-05-28 141359.png>)
-![alt text](<bilder/Skärmbild 2026-05-28 141408.png>)
-![alt text](<bilder/Skärmbild 2026-05-28 141414.png>)
-![alt text](<bilder/Skärmbild 2026-05-28 141419.png>)
-![alt text](<bilder/Skärmbild 2026-05-28 141427.png>)
+![alt text](<bilder/index sida.png>)
+![alt text](<bilder/Grundläggande matte sida.png>)
+![alt text](bilder/OmSidan.png)
+![alt text](<bilder/Övningar sida.png>)
+![alt text](<bilder/Miniräknare sida.png>)
