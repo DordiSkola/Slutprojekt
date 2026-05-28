@@ -29,15 +29,30 @@ I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare 
 
 ## Google Chrome
 
+### Dator
+
 ![Dator](<bilder/Skärmbild 2026-05-28 093107.png>)
+
+### Mobil
+
 ![Mobil](<bilder/Skärmbild 2026-05-28 093144.png>)
 
 ## Microsoft Edge
 
+### Dator
+
 ![Dator](<bilder/Skärmbild 2026-05-28 092511.png>)
+
+### Mobil
+
 ![Mobil](<bilder/Skärmbild 2026-05-28 092447.png>)
 
 ## Brave
 
+### Dator
+
 ![Dator](<bilder/Skärmbild 2026-05-28 093255.png>)
+
+### Mobil
+
 ![Mobil](<bilder/Skärmbild 2026-05-28 093306.png>)
