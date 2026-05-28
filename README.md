@@ -15,7 +15,7 @@ I "grundläggande matte" sidan har jag information om vad enkla matte begrepp ha
 
 I "Omsidan" sida har jag information om vem som gjorde sidan alltså mig, varför jag gjorde sidan och vad det är för sida. Jag har en bild på trigonometri som visar att det är komplicerat men att jag kommer att förklara det på ett enkelt sätt.
 
-![alt text](bilder/Circle-trig6.svg)
+![Trigonometri](bilder/Circle-trig6.svg)
 
 ## Övningar
 
@@ -24,3 +24,20 @@ I "Övningar" sidan har jag en quiz med 5 frågor som blir slumpmässigt valda o
 ## Miniräknare
 
 I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare visualisering av grafer. Miniräknaren räknar ut det man skriver in så som en vanlig miniräknare gör. Geogebra är tagen från geogebrasa sidan.
+
+# Bevis att sidan fungerar på olika webbsökare
+
+## Google Chrome
+
+![Dator](<bilder/Skärmbild 2026-05-28 093107.png>)
+![Mobil](<bilder/Skärmbild 2026-05-28 093144.png>)
+
+## Microsoft Edge
+
+![Dator](<bilder/Skärmbild 2026-05-28 092511.png>)
+![Mobil](<bilder/Skärmbild 2026-05-28 092447.png>)
+
+## Brave
+
+![Dator](<bilder/Skärmbild 2026-05-28 093255.png>)
+![Mobil](<bilder/Skärmbild 2026-05-28 093306.png>)
