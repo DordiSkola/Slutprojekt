@@ -64,3 +64,14 @@ I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare 
 ### Mobil
 
 ![Mobil](<bilder/Skärmbild 2026-05-28 093306.png>)
+
+<br><br><br>
+
+# Alla sidor:
+
+![alt text](<bilder/Skärmbild 2026-05-28 141359.png>)
+![alt text](<bilder/Skärmbild 2026-05-28 141408.png>)
+![alt text](<bilder/Skärmbild 2026-05-28 141414.png>)
+![alt text](<bilder/Skärmbild 2026-05-28 141419.png>)
+![alt text](<bilder/Skärmbild 2026-05-28 141427.png>)
+![alt text](README.md)
