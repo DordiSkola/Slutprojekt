@@ -24,11 +24,9 @@ I "Övningar" sidan har jag en quiz med 5 frågor som blir slumpmässigt valda o
 ## Miniräknare
 
 I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare visualisering av grafer. Miniräknaren räknar ut det man skriver in så som en vanlig miniräknare gör. Geogebra är tagen från geogebrasa sidan.
-<br><br><br>
+<br><br><br><br>
 
 # Bevis att sidan fungerar på olika webbsökare
-
-<br><br>
 
 ## Google Chrome
 
@@ -39,7 +37,7 @@ I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare 
 ### Mobil
 
 ![Mobil](<bilder/Skärmbild 2026-05-28 093144.png>)
-<br><br>
+<br><br><br>
 
 ## Microsoft Edge
 
@@ -50,7 +48,7 @@ I "Miniräknare" sidan har jag en miniräknare och geogebra under för lättare 
 ### Mobil
 
 ![Mobil](<bilder/Skärmbild 2026-05-28 092447.png>)
-<br><br>
+<br><br><br>
 
 ## Brave
 
